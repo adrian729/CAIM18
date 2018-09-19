@@ -23,6 +23,8 @@ from elasticsearch.exceptions import NotFoundError
 
 import argparse
 
+from os import environ
+
 from elasticsearch_dsl import Search
 from elasticsearch_dsl.query import Q
 
@@ -43,7 +45,7 @@ if __name__ == '__main__':
         query = ' '.join(args.query)
 
     try:
-        client = Elasticsearch(hosts='https://3f0o7ewjj6:dzpfclylp7@caim-4519739485.eu-west-1.bonsaisearch.net')
+        client = Elasticsearch(hosts=environ.get('bonsai_CAIM'))
         s = Search(using=client, index=index)
 
 
