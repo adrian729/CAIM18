@@ -85,4 +85,3 @@ if __name__ == '__main__':
     # Bulk execution of elasticsearch operations (faster than executing all one by one)
     print('Indexing ...')
     bulk(client, ldocs)
-
