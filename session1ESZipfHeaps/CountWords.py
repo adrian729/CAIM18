@@ -35,7 +35,7 @@ if __name__ == '__main__':
     index = args.index
 
     try:
-        client = Elasticsearch(hosts='https://3f0o7ewjj6:dzpfclylp7@caim-4519739485.eu-west-1.bonsaisearch.net')
+        client = Elasticsearch()
         voc = {}
         sc = scan(client, index=index, doc_type='document', query={"query" : {"match_all": {}}})
         for s in sc:

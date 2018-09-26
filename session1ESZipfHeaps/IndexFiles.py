@@ -71,7 +71,7 @@ if __name__ == '__main__':
         ldocs.append({'_op_type': 'index', '_index': index, '_type': 'document', 'path': f, 'text': text})
 
     # Working with ElasticSearch
-    client = Elasticsearch(hosts='https://3f0o7ewjj6:dzpfclylp7@caim-4519739485.eu-west-1.bonsaisearch.net')
+    client = Elasticsearch()
     try:
         # Drop index if it exists
         ind = Index(index, using=client)

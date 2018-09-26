@@ -45,7 +45,7 @@ if __name__ == '__main__':
         query = ' '.join(args.query)
 
     try:
-        client = Elasticsearch(hosts=environ.get('bonsai_CAIM'))
+        client = Elasticsearch()
         s = Search(using=client, index=index)
 
 
