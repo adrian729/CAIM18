@@ -72,4 +72,3 @@ if __name__ == '__main__':
         print ('%d Documents'% response.hits.total)
     except NotFoundError:
         print('Index %s does not exists' % index)
-
