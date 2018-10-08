@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """
 .. module:: CountWords
 
@@ -56,8 +57,7 @@ if __name__ == '__main__':
 
 
         for pal, cnt in sorted(lpal, key=lambda x: x[0 if args.alpha else 1]):
-            print(pal)
-            print('%d, %s' % (cnt, pal.decode("utf-8")))
+            print('%d, %s' % (cnt, pal.decode('iso8859-1').encode('utf-8')))
         print('%s Words' % len(lpal))
     except NotFoundError:
         print('Index %s does not exists' % index)

@@ -126,5 +126,5 @@ if __name__ == '__main__':
     print("Index settings=", ind.get_settings())
     # Bulk execution of elastic search operations (faster than executing all one by one)
     print('Indexing ...')
-    bulk(client, ldocs)
+    bulk(client, ldocs, request_timeout=120)
 
