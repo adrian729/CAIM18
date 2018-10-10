@@ -28,7 +28,7 @@ def gen_tokenizer(tokenizer):
     return arg_tokenizer
 
 tokenizers = ['whitespace', 'classic', 'standard', 'letter']
-filters = ['lowercase', 'asciifolding', 'stop', 'snowball', 'porter_stem', 'kstem']
+filters = ['lowercase', 'asciifolding', 'stop', 'snowball', 'porter_stem', 'kstem'] # lowercase and asciifolding MUST be done before the other filters.
 
 name = 'novels'
 for t in tokenizers:
