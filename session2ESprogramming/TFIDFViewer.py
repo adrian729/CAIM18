@@ -23,6 +23,10 @@ from elasticsearch.client import CatClient
 from elasticsearch_dsl import Search
 from elasticsearch_dsl.query import Q
 
+from sklearn.preprocessing import normalize as sknorm
+from sklearn.metrics.pairwise import cosine_similarity as sim
+from math import log
+
 import argparse
 
 import numpy as np
@@ -88,24 +92,21 @@ def toTFIDF(client, index, file_id):
     dcount = doc_count(client, index)
 
     tfidfw = []
-    for (t, w),(_, df) in zip(file_tv, file_df):
-        #
-        # Something happens here
-        #
-        pass
+    for (t, w), (_, df) in zip(file_tv, file_df):
+        tf = w/max_freq
+        idf = log(dcount/df, 2)
+        tfidfw.append((t, tf*idf))
 
     return normalize(tfidfw)
 
-def print_term_weigth_vector(twv):
+def print_term_weight_vector(twv):
     """
     Prints the term vector and the correspondig weights
     :param twv:
     :return:
     """
-    #
-    # Program something here
-    #
-    pass
+    for i in twv:
+        print(i)
 
 
 def normalize(tw):
@@ -115,23 +116,39 @@ def normalize(tw):
     :param tw:
     :return:
     """
-    #
-    # Program something here
-    #
-    return None
+    tw = list(zip(*tw))
+    tw[1] = tuple(sknorm([tw[1],], axis=1)[0])
+    tw = list(zip(*tw))
+    return tw
 
 
 def cosine_similarity(tw1, tw2):
     """
-    Computes the cosine similarity between two weight vectors, terms are alphabetically ordered
+    Computes the cosine similarity between two weight vectors, terms are alphabetically ordered and normalized
     :param tw1:
     :param tw2:
     :return:
     """
-    #
-    # Program something here
-    #
-    return 0
+
+    it1 = 0
+    it2 = 0
+    while it1 < len(tw1) and it2 < len(tw2):
+        if tw1[it1][0] < tw2[it2][0]:
+            tw2.insert(it2, (tw1[it1][0], 0))
+        elif tw1[it1][0] > tw2[it2][0]:
+            tw1.insert(it1, (tw2[it2][0], 0))
+        it1 += 1
+        it2 += 1
+    if it1 < len(tw1):
+        tw2.extend(list(map(lambda t: (t[0], 0), tw1[it1:])))
+    if it2 < len(tw2):
+        tw1.extend(list(map(lambda t: (t[0], 0), tw2[it2:])))
+
+    tw1 = list(zip(*tw1))
+    tw2 = list(zip(*tw2))
+
+    csim = sim([tw1[1],], [tw2[1],])[0][0]
+    return csim
 
 def doc_count(client, index):
     """
@@ -172,10 +189,10 @@ if __name__ == '__main__':
 
         if args.print:
             print('TFIDF FILE %s' % file1)
-            print_term_weigth_vector(file1_tw)
+            print_term_weight_vector(file1_tw)
             print ('---------------------')
             print('TFIDF FILE %s' % file2)
-            print_term_weigth_vector(file2_tw)
+            print_term_weight_vector(file2_tw)
             print ('---------------------')
 
         print("Similarity = %3.5f" % cosine_similarity(file1_tw, file2_tw))
