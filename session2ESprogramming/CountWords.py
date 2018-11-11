@@ -56,7 +56,7 @@ if __name__ == '__main__':
             lpal.append((v.encode("utf8", "ignore"), voc[v]))
 
         for pal, cnt in sorted(lpal, key=lambda x: x[0 if args.alpha else 1]):
-            print('{}, {}'.format(cnt, pal.decode('iso8859-1').encode('utf-8')))
+            print('{}, {}'.format(cnt, pal.decode('iso8859-1').encode('utf-8'))) # CHANGED
         print('%s Words' % len(lpal))
     except NotFoundError:
         print('Index %s does not exists' % index)

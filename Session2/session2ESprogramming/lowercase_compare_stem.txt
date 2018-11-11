@@ -1,0 +1,263 @@
+------------------------
+------------------------
+FILE:  ./cwords_done/novels_wh_lo_po.txt
+------------------------
+ALL DATA:
+first words: ['the', 'of', 'and', 'to', 'a', 'in', 'i', 'that', 'hi', 'it']
+freq first words: [42252, 24116, 23783, 18095, 15331, 13530, 9233, 8217, 7124, 6961]
+mse 3637.289557222414
+------------
+REMOVED DATA
+removed 601
+first words: ['christma', 'instanc', 'counten', 'lost', 'dress', 'ag', 'whisper', 'fertil', 'beneath', 'sens']
+freq first words: [104, 104, 104, 103, 103, 103, 102, 102, 102, 102]
+mse 0.14772641327666816
+------------------------
+------------------------
+------------------------
+------------------------
+FILE:  ./cwords_done/novels_wh_po.txt
+------------------------
+ALL DATA:
+first words: ['the', 'of', 'and', 'to', 'a', 'in', 'that', 'wa', 'I', 'hi']
+freq first words: [188100, 113753, 93626, 80969, 60728, 53213, 33290, 33076, 32109, 26128]
+mse 1435797.754478146
+------------
+REMOVED DATA
+removed 1201
+first words: ['space', 'beg', 'worth', 'adapt', 'cry', 'illustr', 'Dure', 'carefulli', 'Maisi', 'announc']
+freq first words: [215, 215, 215, 215, 214, 214, 213, 213, 212, 212]
+mse 0.12817521200545343
+------------------------
+------------------------
+
+------------------------
+------------------------
+FILE:  ./cwords_done/novels_wh_lo_ks.txt
+------------------------
+ALL DATA:
+first words: ['the', 'of', 'and', 'to', 'a', 'in', 'that', 'was', 'i', 'his']
+freq first words: [203268, 115552, 97314, 82329, 63102, 56447, 34288, 33298, 32123, 27474]
+mse 1753006.7618337844
+------------
+REMOVED DATA
+removed 1401
+first words: ['pair', 'drive', 'absolute', 'yourself', 'burst', 'rising', 'recover', 'interval', 'independent', 'assign']
+freq first words: [173, 173, 173, 172, 172, 172, 172, 172, 172, 172]
+mse 0.19431104649095637
+------------------------
+------------------------
+------------------------
+------------------------
+FILE:  ./cwords_done/novels_wh_ks.txt
+------------------------
+ALL DATA:
+first words: ['the', 'of', 'and', 'to', 'a', 'in', 'I', 'that', 'his', 'was']
+freq first words: [40013, 23837, 23201, 17891, 14938, 12943, 9229, 8076, 6963, 6507]
+mse 2121.2150085985195
+------------
+REMOVED DATA
+removed 801
+first words: ['admit', 'New', 'forward', 'curious', 'woman', 'top', 'striking', 'mention', 'fresh', 'fast']
+freq first words: [76, 76, 75, 75, 75, 75, 75, 75, 75, 75]
+mse 0.13236117973139042
+------------------------
+------------------------
+
+------------------------
+------------------------
+FILE:  ./cwords_done/novels_cl_lo_po.txt
+------------------------
+ALL DATA:
+first words: ['the', 'of', 'and', 'to', 'a', 'in', 'i', 'it', 'that', 'wa']
+freq first words: [206744, 116806, 101597, 84217, 65288, 57994, 37934, 37661, 37376, 34651]
+mse 1677055.9813006516
+------------
+REMOVED DATA
+removed 1401
+first words: ['assembl', 'thick', 'trust', 'sin', 'paint', 'necess', 'cloud', 'adopt', 'templ', 'secretari']
+freq first words: [250, 249, 249, 249, 249, 249, 249, 249, 248, 248]
+mse 0.17322186637249556
+------------------------
+------------------------
+------------------------
+------------------------
+FILE:  ./cwords_done/novels_cl_po.txt
+------------------------
+ALL DATA:
+first words: ['the', 'of', 'and', 'to', 'a', 'in', 'I', 'that', 'wa', 'it']
+freq first words: [189882, 114853, 97058, 82609, 62088, 54557, 37758, 36028, 34361, 31718]
+mse 1163783.002363761
+------------
+REMOVED DATA
+removed 1401
+first words: ['proof', 'interv', 'cheer', 'Ruth', 'convinc', 'prefer', 'damag', 'Lieuten', 'spoken', 'respons']
+freq first words: [252, 252, 252, 251, 251, 251, 251, 250, 250, 250]
+mse 0.14519212085719205
+------------------------
+------------------------
+
+------------------------
+------------------------
+FILE:  ./cwords_done/novels_cl_lo_ks.txt
+------------------------
+ALL DATA:
+first words: ['the', 'of', 'and', 'to', 'a', 'in', 'i', 'that', 'was', 'it']
+freq first words: [206787, 116802, 101595, 84215, 65288, 57988, 37934, 37376, 34648, 31712]
+mse 1485022.110785363
+------------
+REMOVED DATA
+removed 1401
+first words: ['protect', 'begin', 'actually', 'native', 'domestic', 'cast', 'powi', 'shook', 'working', 'taste']
+freq first words: [243, 243, 243, 242, 242, 242, 241, 241, 241, 241]
+mse 0.18886539108253772
+------------------------
+------------------------
+------------------------
+------------------------
+FILE:  ./cwords_done/novels_cl_ks.txt
+------------------------
+ALL DATA:
+first words: ['the', 'of', 'and', 'to', 'a', 'in', 'I', 'that', 'was', 'his']
+freq first words: [189921, 114849, 97058, 82607, 62088, 54551, 37758, 36028, 34359, 26407]
+mse 1005836.4164415344
+------------
+REMOVED DATA
+removed 1401
+first words: ['utter', 'title', 'quality', 'preserve', 'cloud', 'chapter', 'bore', 'actually', 'Sawyer', 'terrible']
+freq first words: [243, 243, 243, 243, 243, 243, 243, 243, 242, 242]
+mse 0.13478314869575003
+------------------------
+------------------------
+
+------------------------
+------------------------
+FILE:  ./cwords_done/novels_st_lo_po.txt
+------------------------
+ALL DATA:
+first words: ['the', 'of', 'and', 'to', 'a', 'in', 'i', 'it', 'that', 'wa']
+freq first words: [206584, 116790, 101590, 84202, 65238, 57961, 37791, 37629, 37280, 34579]
+mse 1700726.0634982858
+------------
+REMOVED DATA
+removed 1401
+first words: ['justic', 'higher', 'fate', 'adopt', 'templ', 'secretari', 'ring', 'roof', 'rapid', 'necess']
+freq first words: [249, 249, 249, 249, 248, 248, 248, 248, 248, 248]
+mse 0.17881368021730712
+------------------------
+------------------------
+------------------------
+------------------------
+FILE:  ./cwords_done/novels_st_po.txt
+------------------------
+ALL DATA:
+first words: ['the', 'of', 'and', 'to', 'a', 'in', 'I', 'that', 'wa', 'it']
+freq first words: [189859, 114837, 97055, 82602, 62067, 54533, 37617, 35952, 34291, 31691]
+mse 1182132.3742981541
+------------
+REMOVED DATA
+removed 1401
+first words: ['lie', 'interv', 'cheer', 'extraordinari', 'convinc', 'prefer', 'damag', 'absenc', 'Lieuten', 'respons']
+freq first words: [252, 252, 252, 251, 251, 251, 251, 251, 250, 250]
+mse 0.1572449487807308
+------------------------
+------------------------
+
+------------------------
+------------------------
+FILE:  ./cwords_done/novels_st_lo_ks.txt
+------------------------
+ALL DATA:
+first words: ['the', 'of', 'and', 'to', 'a', 'in', 'i', 'that', 'was', 'it']
+freq first words: [206627, 116786, 101588, 84200, 65238, 57955, 37791, 37280, 34576, 31682]
+mse 1504073.275012222
+------------
+REMOVED DATA
+removed 1601
+first words: ['path', 'pair', 'defect', 'christ', 'vol', 'burn', 'brilliant', 'powerful', 'finding', 'violent']
+freq first words: [209, 209, 209, 209, 208, 208, 208, 208, 208, 208]
+mse 0.1686796337794822
+------------------------
+------------------------
+------------------------
+------------------------
+FILE:  ./cwords_done/novels_st_ks.txt
+------------------------
+ALL DATA:
+first words: ['the', 'of', 'and', 'to', 'a', 'in', 'I', 'that', 'was', 'his']
+freq first words: [189898, 114833, 97055, 82600, 62067, 54527, 37617, 35952, 34289, 26381]
+mse 1019931.3690492199
+------------
+REMOVED DATA
+removed 1401
+first words: ['utter', 'title', 'quality', 'preserve', 'bore', 'II', 'Sawyer', 'terrible', 'machine', 'cloud']
+freq first words: [243, 243, 243, 243, 243, 243, 242, 242, 242, 242]
+mse 0.1496972687161411
+------------------------
+------------------------
+
+------------------------
+------------------------
+FILE:  ./cwords_done/novels_le_lo_po.txt
+------------------------
+ALL DATA:
+first words: ['the', 'of', 'and', 'to', 'a', 'in', 'it', 'i', 'that', 'wa']
+freq first words: [112591, 62224, 55541, 48153, 37636, 32469, 23385, 22529, 21664, 20095]
+mse 8520.686479996011
+------------
+REMOVED DATA
+removed 1401
+first words: ['patient', 'inclin', 'devot', 'cloud', 'board', 'b', 'anybodi', 'snow', 'fly', 'statu']
+freq first words: [143, 143, 143, 143, 143, 143, 142, 142, 142, 142]
+mse 0.11737249512856532
+------------------------
+------------------------
+------------------------
+------------------------
+FILE:  ./cwords_done/novels_le_po.txt
+------------------------
+ALL DATA:
+first words: ['the', 'of', 'and', 'to', 'a', 'in', 'that', 'I', 'wa', 'it']
+freq first words: [163930, 99071, 85394, 73973, 53915, 48010, 32047, 31738, 29839, 28135]
+mse 936590.2504620856
+------------
+REMOVED DATA
+removed 1401
+first words: ['Logic', 'shot', 'hunt', 'space', 'defect', 'imag', 'wors', 'slave', 'respons', 'maintain']
+freq first words: [230, 230, 230, 230, 230, 229, 229, 229, 229, 229]
+mse 0.11854371986552005
+------------------------
+------------------------
+
+------------------------
+------------------------
+FILE:  ./cwords_done/novels_le_lo_ks.txt
+------------------------
+ALL DATA:
+first words: ['the', 'of', 'and', 'to', 'a', 'in', 'i', 'that', 'it', 'was']
+freq first words: [106275, 57227, 52256, 45385, 35644, 29831, 22024, 20612, 19248, 19223]
+mse 8924.21827958283
+------------
+REMOVED DATA
+removed 1601
+first words: ['usually', 'hunting', 'gray', 'somewhat', 'rouse', 'profit', 'origin', 'apart', 'eureka', 'philistine']
+freq first words: [112, 112, 112, 112, 112, 112, 112, 112, 111, 111]
+mse 0.12845762921952691
+------------------------
+------------------------
+------------------------
+------------------------
+FILE:  ./cwords_done/novels_le_ks.txt
+------------------------
+ALL DATA:
+first words: ['the', 'of', 'and', 'to', 'a', 'in', 'I', 'that', 'was', 'it']
+freq first words: [189923, 114850, 97058, 82671, 62195, 54554, 39648, 36381, 34360, 26625]
+mse 1002204.1627423933
+------------
+REMOVED DATA
+removed 1401
+first words: ['wouldn', 'worship', 'firm', 'spoken', 'learn', 'aid', 'breed', 'alive', 'roof', 'legal']
+freq first words: [251, 251, 251, 250, 250, 250, 249, 249, 249, 249]
+mse 0.14389438491978035
+------------------------
+------------------------

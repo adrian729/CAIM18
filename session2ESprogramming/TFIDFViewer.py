@@ -141,7 +141,7 @@ def cosine_similarity(tw1, tw2):
         it2 += 1
     if it1 < len(tw1):
         tw2.extend(list(map(lambda t: (t[0], 0), tw1[it1:])))
-    if it2 < len(tw2):
+    elif it2 < len(tw2):
         tw1.extend(list(map(lambda t: (t[0], 0), tw2[it2:])))
 
     tw1 = list(zip(*tw1))
